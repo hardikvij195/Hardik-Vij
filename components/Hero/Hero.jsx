@@ -60,7 +60,7 @@ const Hero = () => {
           <div className='flex flex-col justify-center items-center space-y-8'>
             <div>
 
-              <Text className={cn(s.hello_text, 'uppercase')} variant='pageHeading'>Hello, World.</Text>
+              <Text className='uppercase' variant='pageHeading'>Hello, World.</Text>
               <Text className={cn(s.me_text, '')} variant='heading'>I&apos;m Hardik Vij</Text>
 
 
@@ -68,21 +68,21 @@ const Hero = () => {
 
             </div>
 
-            <div className={cn('flex justify-between w-3/4 ')}>
+            <div className={cn('flex justify-between w-3/4')}>
               {
                 social.map((m, i) => (
-                  <>
-                    <Link href={m.href} key={i}>
-                      <Image
-                        src={m.img}
-                        width={64}
-                        height={64}
-                        placeholder='blur'
-                        blurDataURL={m.img}
-                        alt={m.title}
-                      />
-                    </Link>
-                  </>
+
+                  <Link href={m.href} key={i}>
+                    <Image
+                      src={m.img}
+                      width={64}
+                      height={64}
+                      placeholder='blur'
+                      blurDataURL={m.img}
+                      alt={m.title}
+                    />
+                  </Link>
+
                 ))
               }
             </div>

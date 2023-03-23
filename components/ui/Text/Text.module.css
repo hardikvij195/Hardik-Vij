@@ -7,7 +7,8 @@
 }
 
 .pageHeading {
-  @apply pt-1 pb-4 text-2xl font-bold leading-7 tracking-wide text-accent-0;
+  @apply pt-1 pb-4 sm:text-4xl text-2xl font-bold leading-7 tracking-wide text-accent-0 text-center ;
+  color: #ff0077;;
 }
 
 .sectionHeading {

@@ -3,10 +3,7 @@
   /* backdrop-filter: blur(1.6px);
     -webkit-backdrop-filter: blur(1.6px); */
 }
-.hello_text {
-  @apply text-center sm:text-4xl text-2xl;
-  color: #ff0077;
-}
+
 .me_text {
   @apply text-accent-0 text-center sm:text-4xl text-2xl;
 }

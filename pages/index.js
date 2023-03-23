@@ -1,10 +1,13 @@
 import Hero from "@/components/Hero";
-
+import BG from "@/components/ui/BG/BG";
 
 export default function Home() {
   return (
     <>
-   <Hero/>
+      <BG />
+      <div className="">
+      <Hero />
+      </div>
     </>
-  )
+  );
 }

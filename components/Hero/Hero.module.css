@@ -1,9 +1,21 @@
 .root {
-    @apply fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70;
-    /* backdrop-filter: blur(1.6px);
+  @apply absolute inset-0 z-50 flex flex-col items-center justify-between bg-black bg-opacity-70 py-5;
+  /* backdrop-filter: blur(1.6px);
     -webkit-backdrop-filter: blur(1.6px); */
 }
-.hello_text{
-    @apply text-accent-0 text-center text-4xl;
-    color: #FF0077;
-}  
+.hello_text {
+  @apply text-center sm:text-4xl text-2xl;
+  color: #ff0077;
+}
+.me_text {
+  @apply text-accent-0 text-center sm:text-4xl text-2xl;
+}
+.title_text {
+  @apply text-accent-0 text-center sm:text-4xl text-2xl;
+}
+.body_text {
+  @apply text-accent-0 text-center sm:text-2xl text-2xl;
+}
+.hero {
+    @apply flex flex-col justify-center items-center w-full px-5
+}

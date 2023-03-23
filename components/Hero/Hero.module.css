@@ -1,0 +1,9 @@
+.root {
+    @apply fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70;
+    /* backdrop-filter: blur(1.6px);
+    -webkit-backdrop-filter: blur(1.6px); */
+}
+.hello_text{
+    @apply text-accent-0 text-center text-4xl;
+    color: #FF0077;
+}  

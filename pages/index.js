@@ -1,10 +1,17 @@
+import About from "@/components/About";
 import Hero from "@/components/Hero";
-
+import StartUps from "@/components/StartUps/StartUps";
+import BG from "@/components/ui/BG/BG";
 
 export default function Home() {
   return (
     <>
-   <Hero/>
+      <BG />
+      <div className="">
+      <Hero />
+      <About />
+      <StartUps />
+      </div>
     </>
-  )
+  );
 }

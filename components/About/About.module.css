@@ -1,0 +1,9 @@
+.root {
+@apply mt-10
+}
+.text {
+    @apply text-accent-7 text-center text-2xl font-bold
+}
+.bio_text {
+    @apply text-accent-4 text-center text-xl
+}

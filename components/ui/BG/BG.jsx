@@ -3,35 +3,37 @@ import React from 'react'
 import bg from "../../../public/intro-bg.jpg";
 const BG = () => {
     return (
+        // <div
+        //     style={{
+        //         position: "relative",
+        //         height: "100vh",
+        //         width: "100vw",
+        //         clipPath: "inset(0 0 0 0)",
+        //     }}
+        // >
+            
+        // </div>
         <div
-            style={{
-                position: "relative",
-                height: "100vh",
-                width: "100%",
-                clipPath: "inset(0 0 0 0)",
-            }}
-        >
-            <div
                 style={{
                     position: "fixed",
-                    height: "100%",
-                    width: "100%",
-                    left: "0",
-                    top: "0",
+                    height: "100vh",
+                    width: "100vw",
+                    overflow: 'hidden',
+                    zIndex: -1,
                 }}
             >
                 <Image
                     src={bg}
-                    quality={100}
                     placeholder="blur"
-                    loading="eager"
+                    quality={100}
+                    fill
+                    sizes="100vw"
+                    style={{
+                        objectFit: 'cover',
+                    }}
                     alt=""
-                    layout="fill"
-                    objectFit="cover"
-                    sizes="100vh"
                 />
             </div>
-        </div>
     )
 }
 

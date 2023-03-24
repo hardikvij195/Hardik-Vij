@@ -49,7 +49,7 @@ export const games = [
 
 const Hv = () => {
     return (
-        <Container className={cn(s.root)}>
+        <Container clean className={cn(s.root)}>
             <div className='flex flex-col items-center justify-center space-y-5'>
                 <Image
                     width={100}

@@ -57,7 +57,7 @@ const Hero = () => {
             placeholder="blur"
             loading="eager"
           />
-          <div className='flex flex-col justify-center items-center space-y-8'>
+          <div className='flex flex-col justify-center items-center space-y-8 w-2/3'>
             <div>
 
               <Text className='uppercase' variant='pageHeading'>Hello, World.</Text>
@@ -68,15 +68,15 @@ const Hero = () => {
 
             </div>
 
-            <div className={cn('flex justify-between w-3/4')}>
+            <div className={cn('flex justify-between w-full space-x-5')}>
               {
                 social.map((m, i) => (
 
                   <Link href={m.href} key={i}>
                     <Image
                       src={m.img}
-                      width={64}
-                      height={64}
+                      width={100}
+                      height={100}
                       placeholder='blur'
                       blurDataURL={m.img}
                       alt={m.title}
@@ -88,7 +88,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div>
+        <div className=''>
           <Text className={cn(s.body_text, 'flex justify-center items-center space-x-3')} variant='body'>
             <span>Made With</span>
             <Image width={32} height={32} src='/heart.png' alt='heart icon' /><span>&</span><Image width={32} height={32} src='/flutter.svg' alt='flutter icon' />

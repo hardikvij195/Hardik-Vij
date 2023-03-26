@@ -2,14 +2,13 @@ import React from 'react'
 import cn from 'clsx'
 import s from './PricingCard.module.css'
 import { FaCheck } from 'react-icons/fa'
-import { HiOutlineXMark } from 'react-icons/hi'
 import Image from 'next/image'
 const PricingCard = ({ item }) => {
     return (
         <div className={cn(s.root)}>
-
-
+            
             <div className={cn(s.main)}>
+            <div className='absolute top-[-4.2%] left-[10%] bg-gradient-to-r from-cyan to-blue text-accent-0 w-[80%] py-1 rounded-full text-center'><strong>{item?.title}</strong></div>
                 <div className="">
                     {item?.duration}{" "}Month (2 hrs/Week)
                 </div>
@@ -53,9 +52,9 @@ const PricingCard = ({ item }) => {
                     </div>
                     <div className='flex items-center space-x-3'>
                         <span>
-                        {
-                                item.intermediate==="check" ?  <FaCheck /> : <Image width={12} height={12} src={"/xmark-solid.svg"} alt=''
-                                 />
+                            {
+                                item.intermediate === "check" ? <FaCheck /> : <Image width={12} height={12} src={"/xmark-solid.svg"} alt=''
+                                />
                             }
                         </span>
                         <div>
@@ -65,9 +64,9 @@ const PricingCard = ({ item }) => {
                     </div>
                     <div className='flex items-center space-x-3'>
                         <span>
-                        {
-                                item.advanced==="check" ?  <FaCheck /> : <Image width={12} height={12} src={"/xmark-solid.svg"} alt=''
-                                 />
+                            {
+                                item.advanced === "check" ? <FaCheck /> : <Image width={12} height={12} src={"/xmark-solid.svg"} alt=''
+                                />
                             }
                         </span>
                         <div>

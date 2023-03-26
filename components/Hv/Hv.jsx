@@ -57,7 +57,7 @@ const Hv = () => {
                     src="/logohv.png"
                     alt=""
                 />
-                <h3 className='text-3xl font-bold text-accent-0 text-center'>Hv Technologies</h3>
+                <h3 className='text-5xl font-bold text-accent-0 text-center'>Hv Technologies</h3>
                 <p className='text-2xl font-thin text-accent-0 text-center'>Founded in 2018, We Expertise in Apps, Websites & Games</p>
             </div>
             <div className='flex flex-col items-center justify-center space-y-5'>

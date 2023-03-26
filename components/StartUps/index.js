@@ -1,1 +1,1 @@
-export {defaults} from './StartUps'
+export { default } from "./StartUps";

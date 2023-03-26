@@ -1,0 +1,6 @@
+.root {
+    @apply border-[2px] border-blue rounded-lg p-4
+}
+.breakLine {
+    @apply bg-blue h-[2px]
+}
